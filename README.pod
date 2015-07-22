@@ -8,7 +8,7 @@ B::Hooks::Parser - Interface to perl's parser variables
 
 =head1 VERSION
 
-version 0.14
+version 0.15
 
 =head1 DESCRIPTION
 
@@ -68,7 +68,9 @@ is being held onto by the lexer.
 The following functions work just like their equivalent in the Perl API,
 except that they can't handle embedded C<NUL> bytes in strings.
 
-=head2 C<hook_op_check_id hook_parser_setup (pTHX)>
+=head2 C<hook_op_check_id hook_parser_setup (void)>
+
+Note: may be implemented as a macro.
 
 =head2 C<void hook_parser_teardown (hook_op_check_id id)>
 
@@ -88,7 +90,7 @@ Florian Ragwitz <rafl@debian.org>
 
 =head1 CONTRIBUTORS
 
-=for stopwords Karen Etheridge Zefram Alexandr Ciornii Liu Kang-min Vincent Pit
+=for stopwords Karen Etheridge Zefram Alexandr Ciornii Vincent Pit Liu Kang-min
 
 =over 4
 
@@ -106,11 +108,11 @@ Alexandr Ciornii <alexchorny@gmail.com>
 
 =item *
 
-Liu Kang-min <gugod@gugod.org>
+Vincent Pit <perl@profvince.com>
 
 =item *
 
-Vincent Pit <perl@profvince.com>
+Liu Kang-min <gugod@gugod.org>
 
 =back
 
