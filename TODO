@@ -2,3 +2,7 @@
 symbols deprecated, time to update stoken_chunk_of_toke.c?
   - UNKNOWN http://www.cpantesters.org/cpan/report/d354dd6d-7b13-1014-b2d7-331548f0d22a
 
+19:10 < hobbs> *Please* don't trust me on this, but I think the while in S_scan_word could use isIDCONT_utf8 instead
+19:12 < hobbs> because that's what that bit is, is looking for an identifier
+19:13 < hobbs> so the starting condition maybe should be updated to isIDFIRST too :)
+
