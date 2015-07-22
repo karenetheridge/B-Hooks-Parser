@@ -1,6 +1,8 @@
 Revision history for B-Hooks-Parser
 
 {{ $NEXT }}
+  - fix segfaults on clang by defining PERL_NO_GET_CONTEXT (thanks, Vincent
+    Pit!  closes github #1, #2, RT#94463)
 
 0.13    2015-06-06 20:54:32Z
   - switch tooling off of Module::Install
