@@ -6,10 +6,3 @@ symbols deprecated, time to update stoken_chunk_of_toke.c?
 19:12 < hobbs> because that's what that bit is, is looking for an identifier
 19:13 < hobbs> so the starting condition maybe should be updated to isIDFIRST too :)
 
-
-
-And what's up with this one?
-http://www.cpantesters.org/cpan/report/bd13637e-2258-11e5-9a12-8b1f820e1182
- * Can't load dependency information for B::Hooks::Parser:
-   Can't locate B/Hooks/Parser/Install/Files.pm in @INC (...) at /home/mauke/usr/lib/perl5/site_perl/5.22.0/ExtUtils/Depends.pm line 185.
-
