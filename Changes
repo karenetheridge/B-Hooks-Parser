@@ -1,6 +1,7 @@
 Revision history for B-Hooks-Parser
 
 {{ $NEXT }}
+  - no changes since trial release
 
 0.15    2015-07-22 16:17:48Z (TRIAL RELEASE)
   - restore the prototype of hook_parser_setup() for the C interface
