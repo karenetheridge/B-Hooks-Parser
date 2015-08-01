@@ -6,7 +6,8 @@ Revision history for B-Hooks-Parser
   - no changes since trial release
 
 0.15    2015-07-22 16:17:48Z (TRIAL RELEASE)
-  - restore the prototype of hook_parser_setup() for the C interface
+  - restore the prototype of hook_parser_setup() for the C interface (Vincent
+    Pit)
   - restore B::Hooks::Parser::Install::Files, lost since version 0.13
 
 0.14    2015-07-22 02:16:31Z (TRIAL RELEASE)
@@ -18,7 +19,7 @@ Revision history for B-Hooks-Parser
 
 0.12    2013-05-11
   - fix test that breaks in 5.17.4 (RT#80070, Father Chrysotomos)
-  - Require ExtUtils::Depends 0.302 for win32 support (RT#77311), Alexandr
+  - Require ExtUtils::Depends 0.302 for win32 support (RT#77311, Alexandr
     Ciornii)
 
 0.11    2012-06-18 16:01:00Z
