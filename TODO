@@ -6,3 +6,6 @@ symbols deprecated, time to update stoken_chunk_of_toke.c?
 19:12 < hobbs> because that's what that bit is, is looking for an identifier
 19:13 < hobbs> so the starting condition maybe should be updated to isIDFIRST too :)
 
+
+possibly relevant patch?
+https://github.com/rurban/distroprefs/blob/master/sources/authors/id/R/RU/RURBAN/patches/B-Hooks-Parser-0.08-MAD.patch
