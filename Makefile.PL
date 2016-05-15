@@ -15,6 +15,8 @@ $pkg->add_pm('lib/B/Hooks/Parser.pm' => '$(INST_LIB)/B/Hooks/Parser.pm');
 mkdir 'build';
 $pkg->save_config('build/IFiles.pm');
 
+$ENV{PERL_MM_OPT} = 'NORECURS=1';
+
 WriteMakefile(
     NAME => 'B::Hooks::Parser',
     VERSION_FROM => 'lib/B/Hooks/Parser.pm',
