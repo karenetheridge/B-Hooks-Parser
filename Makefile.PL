@@ -4,9 +4,9 @@ use warnings;
 use lib 'inc';
 use ExtUtils::MakeMaker::Dist::Zilla::Develop;
 
-use ExtUtils::Depends;
-
 # keep this code consistent with the [MakeMaker::Awesome] arguments in dist.ini
+use ExtUtils::Depends 0.302;
+
 my $pkg = ExtUtils::Depends->new('B::Hooks::Parser', 'B::Hooks::OP::Check');
 $pkg->install('hook_parser.h');
 $pkg->add_xs('Parser.xs');
