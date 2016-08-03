@@ -28,4 +28,5 @@ WriteMakefile(
         /,
         'boot_B__Hooks__Parser',
     ],
+    depend => { '$(OBJECT)' => 'stolen_chunk_of_toke.c' },
 );

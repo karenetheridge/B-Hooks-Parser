@@ -1,6 +1,8 @@
 Revision history for B-Hooks-Parser
 
 {{ $NEXT }}
+  - add missing make dependency on stolen_chunk_of_toke.c (Father
+    Chrysostomos, RT#116679)
 
 0.16    2015-07-28 05:55:58Z
   - no changes since trial release
