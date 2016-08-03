@@ -15,13 +15,12 @@ $pkg->add_pm('lib/B/Hooks/Parser.pm' => '$(INST_LIB)/B/Hooks/Parser.pm');
 mkdir 'build';
 $pkg->save_config('build/IFiles.pm');
 
-$ENV{PERL_MM_OPT} = 'NORECURS=1';
-
 WriteMakefile(
     NAME => 'B::Hooks::Parser',
     VERSION_FROM => 'lib/B/Hooks/Parser.pm',
     INSTALLMAN1DIR => 'none',
     INSTALLMAN3DIR => 'none',
+    NORECURS => 1,
     $pkg->get_makefile_vars,
     FUNCLIST => [ qw/hook_parser_setup hook_parser_teardown hook_parser_get_linestr
         hook_parser_get_linestr_offset hook_parser_set_linestr hook_parser_get_lex_stuff
