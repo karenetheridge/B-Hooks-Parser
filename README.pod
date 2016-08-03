@@ -8,7 +8,7 @@ B::Hooks::Parser - Interface to perl's parser variables
 
 =head1 VERSION
 
-version 0.16
+version 0.17
 
 =head1 DESCRIPTION
 
@@ -84,6 +84,11 @@ Note: may be implemented as a macro.
 
 =head2 C<void hook_parser_clear_lex_stuff (pTHX)>
 
+=head1 SUPPORT
+
+Bugs may be submitted through L<the RT bug tracker|https://rt.cpan.org/Public/Dist/Display.html?Name=B-Hooks-Parser>
+(or L<bug-B-Hooks-Parser@rt.cpan.org|mailto:bug-B-Hooks-Parser@rt.cpan.org>).
+
 =head1 AUTHOR
 
 Florian Ragwitz <rafl@debian.org>
@@ -116,7 +121,7 @@ Liu Kang-min <gugod@gugod.org>
 
 =back
 
-=head1 COPYRIGHT AND LICENSE
+=head1 COPYRIGHT AND LICENCE
 
 This software is copyright (c) 2008 by Florian Ragwitz.
 
