@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 use Test::More tests => 9;
-use Test::Exception;
+use Test::Fatal;
 
 BEGIN { use_ok('B::Hooks::Parser'); }
 
@@ -22,6 +22,8 @@ eval_test(qq{ BEGIN { \$x = B::Hooks::Parser::get_linestr(); } q\x{0}1\x{0} ;});
 is(B::Hooks::Parser::get_linestr, undef, 'get_linestr returns undef at runtime');
 ok(B::Hooks::Parser::get_linestr_offset() < 0, 'get_linestr_offset returns something negative at runtime');
 
-throws_ok(sub {
-    B::Hooks::Parser::set_linestr('foo');
-}, qr/runtime/, 'set_linestr fails at runtime');
+like(
+    exception { B::Hooks::Parser::set_linestr('foo') },
+    qr/at runtime/,
+    'set_linestr fails at runtime',
+);
