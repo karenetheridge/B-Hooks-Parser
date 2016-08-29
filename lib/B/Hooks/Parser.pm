@@ -2,6 +2,7 @@ use strict;
 use warnings;
 package B::Hooks::Parser;
 # ABSTRACT: Interface to perl's parser variables
+# KEYWORDS: perl internals API parser hooks modify
 
 use B::Hooks::OP::Check;
 use parent qw/DynaLoader/;
