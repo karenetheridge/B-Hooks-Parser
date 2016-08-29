@@ -1,6 +1,7 @@
 Revision history for B-Hooks-Parser
 
 {{ $NEXT }}
+  - avoid use of sub_inwhat (RT#116685; see also RT#102918 and perl RT#123865)
 
 0.17    2016-08-03 05:08:02Z
   - add missing make dependency on stolen_chunk_of_toke.c (Father

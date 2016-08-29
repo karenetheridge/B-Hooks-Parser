@@ -92,6 +92,7 @@ STATIC char*    S_scan_word(pTHX_ char *s, char *dest, STRLEN destlen, int allow
    declare the backcompat macros for things to still work (mst) */
 #define PL_lex_formbrack        (PL_parser->lex_formbrack)
 #define PL_lex_brackets         (PL_parser->lex_brackets)
+#define PL_lex_inwhat           (PL_parser->lex_inwhat)
 #define PL_sublex_info          (PL_parser->sublex_info)
 #define PL_oldoldbufptr         (PL_parser->oldoldbufptr)
 #define PL_oldbufptr            (PL_parser->oldbufptr)
@@ -242,7 +243,7 @@ S_skipspace(pTHX_ register char *s)
 	 * of the buffer, we're not reading from a source filter, and
 	 * we're in normal lexing mode
 	 */
-	if (s < PL_bufend || !PL_rsfp || PL_sublex_info.sub_inwhat ||
+	if (s < PL_bufend || !PL_rsfp || PL_lex_inwhat ||
 		PL_lex_state == LEX_FORMLINE)
 	    return s;
 
