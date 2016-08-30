@@ -1,5 +1,7 @@
 Revision history for B-Hooks-Parser
 
+{{ $NEXT }}
+
 0.18    2016-08-30 00:24:10Z (TRIAL RELEASE)
   - avoid use of sub_inwhat (RT#116685; see also RT#102918 and perl RT#123865)
 
