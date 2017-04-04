@@ -1,5 +1,7 @@
 Revision history for B-Hooks-Parser
 
+{{ $NEXT }}
+
 0.19    2017-04-04 19:35:08Z
   - re-release 1.18 as stable (fixes compile issues on recent blead releases)
 
