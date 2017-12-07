@@ -5,7 +5,7 @@
 #include "perl.h"
 #include "XSUB.h"
 
-#define NEED_PL_parser
+#define NEED_PL_parser_GLOBAL
 #include "ppport.h"
 
 #include "hook_parser.h"
