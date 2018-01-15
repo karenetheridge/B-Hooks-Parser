@@ -31,6 +31,6 @@ WriteMakefile(
     depend => { '$(OBJECT)' => 'stolen_chunk_of_toke.c' },
 );
 
-use Devel::PPPort;
+use Devel::PPPort 3.36;
 Devel::PPPort::WriteFile();
 system("$^X ppport.h --compat-version=5.006 --quiet *.h Parser.xs stolen_chunk_of_toke.c");
