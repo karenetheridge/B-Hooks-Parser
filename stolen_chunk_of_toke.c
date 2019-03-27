@@ -19,7 +19,7 @@
 
 #include "EXTERN.h"
 #include "perl.h"
-#define NEED_sv_2pv_flags
+#define NEED_PL_parser
 #include "ppport.h"
 
 /* the following #defines are stolen from assorted headers, not toke.c (mst) */
@@ -128,7 +128,7 @@ static const char c_in_subst[] =
 /* Invoke the idxth filter function for the current rsfp.	 */
 /* maxlen 0 = read one text line */
 I32
-filter_read(pTHX_ int idx, SV *buf_sv, int maxlen)
+Perl_filter_read(pTHX_ int idx, SV *buf_sv, int maxlen)
 {
     filter_t funcp;
     SV *datasv = NULL;
