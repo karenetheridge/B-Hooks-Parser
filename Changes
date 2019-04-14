@@ -1,5 +1,7 @@
 Revision history for B-Hooks-Parser
 
+{{ $NEXT }}
+
 0.21    2019-04-14 18:19:17Z
  - fix threaded builds - revert to older Perl_filter_read (RT#129173)
 
