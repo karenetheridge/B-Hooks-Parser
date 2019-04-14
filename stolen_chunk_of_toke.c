@@ -129,7 +129,7 @@ static const char c_in_subst[] =
 /* Invoke the idxth filter function for the current rsfp.	 */
 /* maxlen 0 = read one text line */
 I32
-filter_read(pTHX_ int idx, SV *buf_sv, int maxlen)
+filter_read(int idx, SV *buf_sv, int maxlen)
 {
     filter_t funcp;
     SV *datasv = NULL;

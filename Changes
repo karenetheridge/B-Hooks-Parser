@@ -1,6 +1,7 @@
 Revision history for B-Hooks-Parser
 
 {{ $NEXT }}
+  - fix prototype of filter_read to work on threaded builds (RT#129173)
 
 0.20    2019-04-14 06:54:56Z
   - now uses core functions directly, instead of code copied from core, when
