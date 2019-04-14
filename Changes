@@ -1,6 +1,9 @@
 Revision history for B-Hooks-Parser
 
 {{ $NEXT }}
+  - now uses core functions directly, instead of code copied from core, when
+    available (starting in perl 5.29.10) (Karl Williamson, pull request #3;
+    see perl RT#133318)
 
 0.19    2017-04-04 19:35:08Z
   - re-release 1.18 as stable (fixes compile issues on recent blead releases)
