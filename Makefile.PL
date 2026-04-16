@@ -1,6 +1,9 @@
 use strict;
 use warnings;
 
+# this file is for local development only! it is overwritten with a more complete file at
+# installation build time, to be shipped with the distribution.
+
 use lib 'inc';
 use ExtUtils::MakeMaker::Dist::Zilla::Develop;
 
